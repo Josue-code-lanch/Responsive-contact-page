@@ -1,0 +1,153 @@
+:root {
+  --color-primario: #ffffff;
+  --color-secundario: #f8fafc;
+  --color-placeholder: #cdd5e0;
+  --color-placeholder-secundario: #111729;
+  --color-boton: #4036a9;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(svg/bg-image.svg);
+  font-family: "Be Vietnam Pro", sans-serif;
+  max-width: 100%;
+  font-size: 1rem;
+}
+
+.icon-form {
+  margin-left: 80px;
+  margin-top: 20px;
+  width: 100px;
+}
+/* SECCION HEADER */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.header h1 {
+  font-size: 4rem;
+  color: var(--color-primario);
+  margin: 0;
+}
+.header p {
+  font-size: 2rem;
+  color: var(--color-primario);
+}
+
+/* SECCION FORMULARIO */
+form {
+  background-color: #ffffff35;
+  backdrop-filter: (0.4rem);
+  margin: 0 auto;
+  border-radius: 15px;
+  max-width: 65%;
+  padding: 30px;
+  margin-bottom: 10%;
+}
+
+.form-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-primario);
+  max-width: 100%;
+  gap: 20px;
+}
+
+.campos {
+  width: 100%;
+}
+
+.data {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  gap: 10px;
+}
+.data label {
+  font-size: 0.875rem;
+}
+.data input {
+  width: 90%;
+}
+input::placeholder {
+  color: var(--color-placeholder);
+}
+
+.data input,
+.data select,
+.message textarea,
+.button button {
+  padding: 20px;
+  border-radius: 13px;
+  border: none;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.data select {
+  width: 100%;
+}
+.data textarea {
+  height: 700px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+}
+.message textarea {
+  max-width: 100%;
+}
+
+.button {
+  min-width: 100%;
+}
+.button button {
+  width: 100%;
+  color: var(--color-boton);
+  font-weight: 700;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .icon-form {
+    width: 100px;
+    margin: 0;
+    padding: 15px;
+  }
+  .header h1 {
+    font-size: 3rem;
+  }
+  .header p {
+    font-size: 1.2rem;
+  }
+  form {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 640px) {
+  .icon-form {
+    width: 80px;
+    margin: 0;
+    padding: 15px;
+  }
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  .header p {
+    font-size: 1rem;
+  }
+  .data {
+    display: block;
+  }
+}

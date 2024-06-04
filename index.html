@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conéctate con Nosotros</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img src="svg/contact-form-icon.svg" class="icon-form" />
+    <div class="header">
+      <h1>
+        Interested in our <br />
+        business pricing?
+      </h1>
+      <p>
+        Fill out the form to view details and we’ll <br />
+        contact you as soon as possible.
+      </p>
+    </div>
+
+    <form action="#" class="form" method="post">
+      <div class="form-data">
+        <div class="data">
+          <div class="campos">
+            <label for="name">Name</label><br />
+            <input id="name" type="text" placeholder="Ethan Johnson" required />
+          </div>
+          <div class="campos">
+            <label for="email">Company Email</label><br />
+            <input
+              id="email"
+              type="email"
+              placeholder="ethan@johnson.com"
+              required
+            />
+          </div>
+        </div>
+        <div class="data">
+          <div class="campos">
+            <label for="company-size">Company Size</label><br />
+            <select name="company-size" id="company-size">
+              <option value="option1">50-100 employees</option>
+              <option value="option2">100-150 employees</option>
+              <option value="option3">150-200 employees</option>
+              <option value="option4">200-250 employees</option>
+            </select>
+          </div>
+          <div class="campos">
+            <label for="subject">Subject</label><br />
+            <select name="subject" id="subject">
+              <option value="subject1">Building Landing pages</option>
+              <option value="subject2">Data Analysis</option>
+              <option value="subject3">Information Security</option>
+              <option value="subject4">Software Design</option>
+            </select>
+          </div>
+        </div>
+        <div class="message">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="30" rows="10">
+50-100 employees</textarea
+          >
+        </div>
+        <div class="button">
+          <button type="submit">Contact Sales</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
